@@ -66,7 +66,7 @@ describe('Form', () => {
     expect(ui.getByPlaceholderText(MAX_AMOUNT_PLACEHOLDER)).toBeInTheDocument();
   });
 
-  // This test hangs, although it appears to call through fine. Suspect there's
+  // This test hangs, although it appears to call through to the client code fine. Suspect there's
   // a bad test configuration somewhere
   test.skip('Calls saveData on success', async () => {
     const data: Form = {
